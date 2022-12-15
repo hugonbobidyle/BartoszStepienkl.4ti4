@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kalkulator</title>
+</head>
+<body>
+
+<h2>Kalkulator</h2>
+
+<form>
+  Liczba 1:<br>
+  <input type="text" id="num1" value="0"><br>
+  Liczba 2:<br>
+  <input type="text" id="num2" value="0"><br><br>
+  <input type="button" onclick="dodaj()" value="Dodaj">
+</form>
+
+<p>Wynik: <span id="wynik"></span></p>
+
+<script>
+function dodaj() {
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var wynik = parseInt(num1) + parseInt(num2);
+    document.getElementById("wynik").innerHTML = wynik;
+}
+</script>
+
+</body>
+</html>
